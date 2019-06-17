@@ -8,13 +8,13 @@ services:
     ports:
       - 8080:80
     volumes:
-      - ./gvsu/:/www/gvsu
+      - ./www/:/www
     links:
       - mysql
     environment:
       DB_HOST: mysql
       DB_DATABASE: php_docker
-      DB_USERNAME: gvsu
+      DB_USERNAME: test
       DB_PASSWORD: password
   mysql:
     image: mysql:5.7
@@ -22,6 +22,6 @@ services:
       - 13306:3306
     environment:
       MYSQL_DATABASE: php_docker
-      MYSQL_USER: gvsu
+      MYSQL_USER: test
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
