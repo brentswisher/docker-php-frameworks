@@ -24,17 +24,25 @@ Includes codeignitor 3.1.10
 * Your project will be at http://localhost:8080/codeignitor/
 ---
 #### Laravel
-Includes laravel 
+Includes laravel 5.8.17
 ##### Installation
 * Checkout branch laravel
-* Move to the /www/laravel Directory
+* Move to the /www/laravel directory
 * Run `composer install` to install dependencies into the /www/laravel/vendor folder
 * Your project will be at http://localhost:8080/laravel/public/
 ---
 #### cakePHP
-Includes cakePHP 
+Includes cakePHP 3.7.8 Red Velvet
 ##### Installation
 * Checkout branch cakephp
-* Move to the /www/cakephp Directory
-* Run `composer install` to install dependencies into the /www/cakephp/vendor folder
+* Move to the /www/cakephp directory
+* Run `composer install --ignore-platform-reqs` to install dependencies into the /www/cakephp/vendor folder
 * Your project will be at http://localhost:8080/cakephp/
+---
+#### Symfony
+Includes Symfony 4.3.1
+##### Installation
+* Checkout branch symphony
+* Move to the /www/symphony directory
+* Run `composer install` to install dependencies into the /www/symphony/vendor folder
+* Your project will be at http://localhost:8080/symphony/public
