@@ -7,8 +7,9 @@ WORKDIR /www
 
 RUN apt-get update \ 
     && apt-get install -y libicu-dev \
-	&& docker-php-ext-install mbstring pdo pdo_mysql \
+	&& docker-php-ext-install mbstring pdo pdo_mysql mysqli \
 	&& docker-php-ext-configure intl \
+	&& docker-php-ext-enable mysqli \
     && docker-php-ext-install intl \
 	&& chown -R www-data:www-data /www \
     && a2enmod rewrite
