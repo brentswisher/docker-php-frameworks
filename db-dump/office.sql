@@ -20,7 +20,7 @@ CREATE TRIGGER office_status_public_key
 
 CREATE TABLE office_user  ( 
 	userId		INT(11) NOT NULL AUTO_INCREMENT,
-	publicid	varchar(45),
+	publicId	varchar(45),
 	username	varchar(255) NOT NULL UNIQUE,
 	firstName	varchar(255) NULL,
 	lastName	varchar(255) NULL,
